@@ -108,6 +108,41 @@ body {
   margin-top: 100px;
   margin-right: 150px;
 }
+/*-------------------     
+    Login Form 
+---------------- */
+.login-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-form input,
+button {
+  font-size: 1.3em;
+  margin-top: 15px;
+  border: 1px solid lightgray;
+  padding-left: 10px;
+}
+
+.login-form button {
+  text-decoration: none;
+  background-color: #e02c6d;
+  color: #ffffff;
+  padding: 10px 25px;
+  transition: all 0.5s ease-in-out;
+}
+.login-form button:hover {
+  transform: scale(0.8);
+}
+.login-form a {
+  text-decoration: none;
+}
 /*----------------- 
     footer
 -------------- */
@@ -166,3 +201,14 @@ footer img {
 /*-------------------------
     Mobile Devices
 ---------------------- */
+/* @media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blogs {
+    background-color: red;
+    flex-direction: column;
+  }
+} */
