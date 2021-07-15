@@ -32,6 +32,12 @@ body {
   color: #ffffff;
   font-size: 4em;
 }
+.banner-link {
+  transition: all 0.3s ease-in-out;
+}
+.banner-link:hover {
+  transform: scale(1.2);
+}
 .banner-link a {
   text-decoration: none;
   background-color: #e02c6d;
@@ -43,6 +49,10 @@ body {
   margin: 100px 0;
   /* margin-left: 80px; */
   margin-right: 100px;
+  transition: all 0.3s ease-in-out;
+}
+.banner-img img:hover {
+  transform: scale(1.2);
 }
 .players-doc {
   display: flex;
@@ -79,6 +89,13 @@ body {
 }
 .highlight-text h2 {
   font-size: 4em;
+  animation: highlight 5s ease-in-out infinite;
+}
+.highlight-button {
+  transition: all 0.3s ease-in-out;
+}
+.highlight-button:hover {
+  transform: scale(1.2);
 }
 .highlight-button a {
   text-decoration: none;
@@ -120,4 +137,21 @@ footer img {
   padding: 7px;
   margin: 7px;
   border-radius: 50px;
+}
+@keyframes highlight {
+  0% {
+    color: red;
+  }
+  25% {
+    color: royalblue;
+  }
+  50% {
+    color: skyblue;
+  }
+  75% {
+    color: rgb(228, 215, 236);
+  }
+  100% {
+    color: rgb(71, 158, 158);
+  }
 }
