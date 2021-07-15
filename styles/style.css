@@ -28,10 +28,22 @@ body {
   margin: 100px auto;
   max-width: 485px;
 }
-.full-text h2 {
+.full-text {
+  font-size: 64px;
   color: #ffffff;
-  font-size: 4em;
+  max-width: 485px;
   animation: highlight 5s ease-in-out infinite;
+}
+
+.full-text span {
+  display: inline-block;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.full-text span:hover {
+  color: var(--button-bg);
+  animation: letter 1s linear infinite;
 }
 .banner-link {
   transition: all 0.3s ease-in-out;
@@ -176,6 +188,15 @@ footer img {
   margin: 7px;
   border-radius: 50px;
 }
+/*-----------------------------------
+      Transition Keyframes
+-------------------------------*/
+@keyframes letter {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes highlight {
   0% {
     color: red;
