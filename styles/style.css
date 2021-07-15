@@ -31,6 +31,7 @@ body {
 .full-text h2 {
   color: #ffffff;
   font-size: 4em;
+  animation: highlight 5s ease-in-out infinite;
 }
 .banner-link {
   transition: all 0.3s ease-in-out;
@@ -66,7 +67,6 @@ body {
   margin: 70px 15px 27px 15px;
   padding: 15px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
-  /* border: 1px solid gray; */
 }
 .blog img {
   height: 300px;
@@ -108,6 +108,9 @@ body {
   margin-top: 100px;
   margin-right: 150px;
 }
+/*----------------- 
+    footer
+-------------- */
 footer {
   display: flex;
   flex-direction: column;
@@ -155,3 +158,11 @@ footer img {
     color: rgb(71, 158, 158);
   }
 }
+
+/*------------------------ 
+    Media Queries 
+------------------------*/
+
+/*-------------------------
+    Mobile Devices
+---------------------- */
